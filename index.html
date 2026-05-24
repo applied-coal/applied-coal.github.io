@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Coal vs Renewables</title>
+    <link rel="icon" type="image/png" href="watermelon.PNG">
+    <meta charset="UTF-8">
+    <meta name="description" content="John Coal's thoughts on renewables vs coal and their costs">
+    <meta name="author" content="John Coal, Arthur and Mitchell">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: "Segoe UI", "Segoe UI Variable", "Trebuchet MS", "Helvetica Neue", Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background: linear-gradient(to bottom, lightgrey, lightblue, rgb(240, 240, 124));
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .header h1 {
+            margin: 0;
+            color: #333;
+        }
+        
+        hr {
+            border: none;
+            border-top: 2px solid #333;
+            margin: 20px 0;
+        }
+        
+        .Current {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            box-sizing: border-box; 
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            min-width: 300px;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-shrink: 1;
+            flex-basis: 100%; 
+        }
+        
+        .Current h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        
+        .Current p {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .Table {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            min-width: 1000px;
+            max-width: 1200px;
+            margin: 0 auto; 
+            flex-shrink: 1;
+            flex-basis: 100%; 
+        }
+
+        .Difference {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            min-width: 300px;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-shrink: 1;
+            flex-basis: 100%; 
+        }
+        
+        .Difference h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        
+        .Difference p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .Conclusion {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            min-width: 300px;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-shrink: 1;
+            flex-basis: 100%;
+        }
+        
+        .Conclusion h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        
+        .Conclusion p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 1200px) {
+            table, img, .Table {display: none;}
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Renewable vs coal, how does cost affect the adoption of renewables?</h1>
+    </div>
+    
+    <hr>
+    
+    <div class="Current" style="display: flex;" align_items="center", gap="20px">
+        <div style="text-align: center;">
+            <h2>What's the current situation?</h2>
+            <p> At present, the most common power source in Australia is coal due to the infrastructure that has been built up over many years and the lowered cost as a result.</p>
+            <p> Coal-fired power stations still support more than 50 per cent of Australia’s electricity but not for much longer as at least half of the remaining coal generation fleet is due to shut within 10 years. Two of the nation’s largest coal plants, Yallourn in Victoria and Eraring in NSW were initially supposed to close in the  2030s, but have made commercial decisions to bring forward their closure dates over the past four years, partly due to the soaring costs of maintaining ageing infrastructure. </p>
+            <p> <i> You can visit the source article for this information <a href="https://www.smh.com.au/politics/federal/burning-questions-is-coal-power-really-cheaper-than-renewables-20250925-p5mxs9.html#:~:text=Coal%2Dfired,infrastructure" target="_blank">here.</a> </i> </p>
+        </div>
+        
+        <img src="TypeGWh1.png" alt="graph" style="border-radius: 20px; align-self: flex-start; width: 650px;"> 
+    </div>
+
+    <div class="Table" style="margin-top: 20px;" width="100%">
+           <table  bgcolor="Black" border="1" cellspacing="0.5" cellpadding="1" min-width="1080px" width="100%" style="font-size: 0.78rem;">
+            <tr bgcolor="lightgrey" style="font-size: 1rem;"> <th colspan="18" align="left"><a href="https://www.energy.gov.au/publications/australian-energy-statistics-table-o-electricity-generation-fuel-type-2023-24-and-2024" target="_blank" title="Refers to information source, energy.gov.au">Energy.gov.au</a> statistics on electricity generation per fuel type per financial year in New South Wales (NSW) and Australia</th></tr>
+            <tr bgcolor="lightgrey" align="center">
+                <th align="left">Location</th>
+                <th align="left">Power Source</th>
+                <th>2008-09</th>
+                <th>2009-10</th>
+                <th>2010-11</th>
+                <th>2011-12</th>
+                <th>2012-13</th>
+                <th>2013-14</th>
+                <th>2014-15</th>
+                <th>2015-16</th>
+                <th>2016-17</th>
+                <th>2017-18</th>
+                <th>2018-19</th>
+                <th>2019-20</th>
+                <th>2020-21</th>
+                <th>2021-22</th>
+                <th>2022-23</th>
+                <th>2023-24</th>
+            </tr>
+            <tr bgcolor="DarkGrey" align="center">
+                <td rowspan="5" align="center" bgcolor="lightgrey">NSW</td>
+                <td align="left">Black Coal</td>
+                <td>67,650.3</td>
+                <td>64,398.6</td>
+                <td>60,732.2</td>
+                <td>60,453.7</td>
+                <td>56,798.6</td>
+                <td>55,819.5</td>
+                <td>52,562.2</td>
+                <td>55,334.5</td>
+                <td>55,967.1</td>
+                <td>57,022.2</td>
+                <td>57,734.9</td>
+                <td>53,566.7</td>
+                <td>50,790.8</td>
+                <td>46,958.8</td>
+                <td>45,602.8</td>
+                <td>44,885.9</td>
+            </tr>
+            <tr bgcolor="LightGrey" align="center">
+                <td align="left">Wind</td>
+                <td>41.3</td>
+                <td>432.5</td>
+                <td>530.1</td>
+                <td>697.6</td>
+                <td>832.6</td>
+                <td>899.2</td>
+                <td>1,376.0</td>
+                <td>1,898.8</td>
+                <td>1,872.0</td>
+                <td>2,431.6</td>
+                <td>3,739.7</td>
+                <td>4,574.3</td>
+                <td>4,805.9</td>
+                <td>5,973.4</td>
+                <td>6,210.9</td>
+                <td>5,893.0</td>
+            </tr>
+            <tr bgcolor="LightBlue" align="center">
+                <td align="left">Hydro</td>
+                <td>1,497.0</td>
+                <td>2,689.5</td>
+                <td>2,474.9</td>
+                <td>2,446.9</td>
+                <td>3,298.1</td>
+                <td>2,721.1</td>
+                <td>1,771.0</td>
+                <td>3,170.2</td>
+                <td>3,290.6</td>
+                <td>2,915.5</td>
+                <td>2,160.3</td>
+                <td>2,110.1</td>
+                <td>2,964.2</td>
+                <td>3,315.5</td>
+                <td>3,752.1</td>
+                <td>3,148.2</td>
+            </tr>
+            <tr bgcolor="LightYellow" align="center">
+                <td align="left">Large-scale solar PV</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>10.6</td>
+                <td>60.2</td>
+                <td>399.5</td>
+                <td>567.6</td>
+                <td>700.0</td>
+                <td>1,348.2</td>
+                <td>2,084.6</td>
+                <td>3,368.0</td>
+                <td>5,014.4</td>
+                <td>5,770.4</td>
+                <td>7,404.7</td>
+            </tr>
+            <tr bgcolor="LightGreen" align="center">
+                <td align="left">Small-scale solar PV</td>
+                <td>36.3</td>
+                <td>119.2</td>
+                <td>526.3</td>
+                <td>657.7</td>
+                <td>857.6</td>
+                <td>964.9</td>
+                <td>1,211.2</td>
+                <td>1,461.9</td>
+                <td>1,706.8</td>
+                <td>2,095.8</td>
+                <td>2,717.1</td>
+                <td>3,417.3</td>
+                <td>4,892.9</td>
+                <td>6,201.3</td>
+                <td>7,555.2</td>
+                <td>9,110.5</td>
+            </tr>
+            <tr bgcolor="DarkGrey" align="center">
+                <td rowspan="5" align="center" bgcolor="lightgrey">Aus</td>
+                <td align="left">Black Coal</td>
+                <td>127,270.5</td>
+                <td>123,724.5</td>
+                <td>116,948.8</td>
+                <td>116,654.3</td>
+                <td>111,491.1</td>
+                <td>106,965.5</td>
+                <td>107,639.4</td>
+                <td>114,263.0</td>
+                <td>118,236.0</td>
+                <td>121,689.3</td>
+                <td>119,809.5</td>
+                <td>111,860.8</td>
+                <td>106,251.4</td>
+                <td>101,076.2</td>
+                <td>96,173.9</td>
+                <td>96,405.3</td>
+            </tr>
+            <tr bgcolor="LightGrey" align="center">
+                <td align="left">Wind</td>
+                <td>3,823.8</td>
+                <td>5,051.7</td>
+                <td>6,084.9</td>
+                <td>6,969.8</td>
+                <td>7,959.6</td>
+                <td>10,251.9</td>
+                <td>11,466.5</td>
+                <td>12,199.5</td>
+                <td>12,597.0</td>
+                <td>15,174.4</td>
+                <td>17,712.0</td>
+                <td>20,395.9</td>
+                <td>24,535.4</td>
+                <td>29,107.8</td>
+                <td>31,384.9</td>
+                <td>30,992.0</td>
+            </tr>
+            <tr bgcolor="LightBlue" align="center">
+                <td align="left">Hydro</td>
+                <td>11,869.4</td>
+                <td>13,548.7</td>
+                <td>16,806.7</td>
+                <td>14,083.3</td>
+                <td>18,269.6</td>
+                <td>18,420.9</td>
+                <td>13,445.0</td>
+                <td>15,318.2</td>
+                <td>16,284.9</td>
+                <td>16,020.8</td>
+                <td>15,967.3</td>
+                <td>15,149.6</td>
+                <td>15,199.7</td>
+                <td>17,010.9</td>
+                <td>16,666.1</td>
+                <td>14,960.1</td>
+            </tr>
+            <tr bgcolor="LightYellow" align="center">
+                <td align="left">Large-scale solar PV</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>49.7</td>
+                <td>107.2</td>
+                <td>457.2</td>
+                <td>672.4</td>
+                <td>1,007.6</td>
+                <td>3,732.4</td>
+                <td>7,136.1</td>
+                <td>9,637.9</td>
+                <td>12,569.2</td>
+                <td>15,212.6</td>
+                <td>18,114.8</td>
+            </tr>
+            <tr bgcolor="LightGreen" align="center">
+                <td align="left">Small-scale solar PV</td>
+                <td>155.6</td>
+                <td>424.8</td>
+                <td>1,530.5</td>
+                <td>2,558.6</td>
+                <td>3,826.2</td>
+                <td>4,366.3</td>
+                <td>5,424.1</td>
+                <td>6,381.0</td>
+                <td>7,399.3</td>
+                <td>8,922.4</td>
+                <td>11,116.2</td>
+                <td>13,897.1</td>
+                <td>18,079.1</td>
+                <td>22,117.5</td>
+                <td>26,229.2</td>
+                <td>30,485.4</td>
+            </tr>
+        </table>
+    </div>
+    <hr>
+
+    <div class="Difference" style="display: flex;" align_items="center", gap="20px">
+        <div style="text-align: center;">
+            <h2>What's the cost difference?</h2>
+            <p> According to the CSIRO’s (Commonwealth Scientific and Industrial Research Organisation) annual energy cost report, known as <a href="GenCost2025-26ConsultDraft_20251216-FINAl.pdf" target="_blank">‘GenCost’</a>. Its latest release, the 2025-26 financial year draft report (December 2025) found that a new coal plant, using the most modern technology to keep emissions down as much as possible (Black Coal with Carbon Capture Storage), would produce electricity for between $224 to $354 a megawatt hour. This is much higher than the $121 - $195 of general black coal and the $52 - $88 of <a title="It just means the normal sunlight based solar pannels you know as opposed to heat  based ones.">photovolatic</a> solar.</p>
+        </div>
+
+        <img src="TypeMWh1.png" alt="graph" style="border-radius: 20px; align-self: flex-start; width: 650px;"> 
+    </div>
+
+    <hr>
+    
+    <div class="Conclusion">
+        <h2>Conclusion</h2>
+        <p>        A key concept these numbers can't fully show is that during sunny days when home rooftop solar majoritively takes over powering houses, the power from the coal stations isn't used as much. As coal power stations typically output a constant rate of power, they're now stuck in a cycle of too much power being requested when the sun is away and not enough power being requested to avoid wastage when it's sunny. This is leading to a lot of coal power stations being forced to soon shut down as they can't ensure a stable income to support and maintain their operations. Overall, the cost of coal power is rising, coal power stations are shutting down and renewables are becoming cheaper & more common. While coal was previously the most common power source in Australia and as a result a cheaper one, the stigma around climate change is sucessfully pushing Australia towards a more renewable future in the energy industry.
+            </p>
+    </div>
+</body>
+</html>
